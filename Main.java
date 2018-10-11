@@ -63,7 +63,16 @@ class Main
         /* 
          * Task 3. Add 1 to each element in ar1.  Print it out below
          */
+        System.out.println("** task 3 **");
         
+        ;
+        
+        for (int i =0; i <ar1.length; i++)
+        {
+            ar1[i]= ar1[i]+1;
+        }
+        for (int i =0; i <ar1.length; i++)
+            System.out.println("ar1[ " +i+ "] = " +ar1[i]);
 
         
         
@@ -74,12 +83,30 @@ class Main
          *         ar1: 1 2 3
          *         ar3: 1 2 3 0 1 2 3
          */
+        int ar3[]= new int [2*ar1.length];
         
+           for (int i =0; i<ar1.length;i++)
+            ar3[i]=ar1[i];
+            
+           for (int i =0; i<ar1.length;i++)
+            ar3[1+ar1.length =ar1[1];
+            
+            
+
         
         /*
          * Task 5.  Switch the first and last element of ar1.
          *          print out the new ar1.  Then switch them back
          */
+        System.out.println("** Task 5**");
+        int value;
+        value=ar1[0];
+        ar1[0]=ar1[ar1.length-2];
+        ar1[ar1.length-1]=value;
+        for (int i=0; i <ar1.length; i++)
+            System.out.println("ar1[" +i+ "] = " +ar1[i]);
+        
+         
         
         /*
          * Task 6A. Print the 2nd to (n-1)th elements of ar1
