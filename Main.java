@@ -76,22 +76,30 @@ class Main
 
         
         
+      
         /*
          * task 4. Create a new array called ar3.
          *         Copy the elements of ar1 into ar3.  Then do it again
          *         For example
          *         ar1: 1 2 3
-         *         ar3: 1 2 3 0 1 2 3
+         *         ar3: 1 2 3 1 2 3
          */
-        int ar3[]= new int [2*ar1.length];
-        
-           for (int i =0; i<ar1.length;i++)
+        System.out.println("** test 4 **");
+        int[] ar3 = new int[ ar1.length *2 ];
+        for (int i=0 ; i< ar1.length ; i++)
+        {
             ar3[i]=ar1[i];
-            
-           for (int i =0; i<ar1.length;i++)
-            ar3[1+ar1.length =ar1[1];
-            
-            
+        }
+        
+        for (int i=0 ; i<ar1.length ; i++)
+        {
+            ar3[i+ar1.length]=ar1[i];
+        }
+        
+        for (int i=0 ; i<ar3.length ; i++)
+            System.out.println("ar3[" + i + "] = "+ar3[i]);
+        //  
+        
 
         
         /*
@@ -99,15 +107,19 @@ class Main
          *          print out the new ar1.  Then switch them back
          */
         System.out.println("** Task 5**");
+        // Ye olde switcheroo
         int value;
         value=ar1[0];
-        ar1[0]=ar1[ar1.length-2];
+        ar1[0]=ar1[ar1.length-1];
         ar1[ar1.length-1]=value;
-        for (int i=0; i <ar1.length; i++)
-            System.out.println("ar1[" +i+ "] = " +ar1[i]);
         
-         
+        for (int i=0 ; i<ar1.length ; i++)
+            System.out.println("ar1[" + i + "] = "+ar1[i]);
         
+        // The Restoration of the rightful heir
+        value=ar1[0];
+        ar1[0]=ar1[ar1.length-1];
+        ar1[ar1.length-1]=value;
         /*
          * Task 6A. Print the 2nd to (n-1)th elements of ar1
          * Task 6B: Print out just the odd numbers in ar1
@@ -115,7 +127,20 @@ class Main
          *          the indices are multiples of 3
          *         
          */
+        System.out.println("** Task 6a**");
+         for (int i=1; i<(n-1);i++)
+            System.out.println("ar1 [" +i+ "] = " +ar1[i]);
         
+        System.out.println("** Task 6b**");
+        for (int i =0;i<ar1.length;i++)
+            if (ar1[i]%2==1)
+                System.out.println(ar1[i]);
+                
+        System.out.println("** Task 6c**");
+        for (int i =0;i<ar1.length;i++)
+            if (i%3==0)
+                System.out.println(ar1[i]);
+           
         /*
          * Task 7.  For each element in ar1, 
          *          If the element is even: leave alone
@@ -127,7 +152,12 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
-        
+        System.out.println("**Task 7**");
+         for (int i=0;i<ar1.length;i++)
+            if (ar1[i]%2==1)
+                System.out.println(ar1[i]*10);
+            else 
+                System.out.println(ar1[i]);         
          /*
           * Task 8
           *    Create an array called ar2odds
