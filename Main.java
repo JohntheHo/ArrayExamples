@@ -155,9 +155,11 @@ class Main
         System.out.println("**Task 7**");
          for (int i=0;i<ar1.length;i++)
             if (ar1[i]%2==1)
-                System.out.println(ar1[i]*10);
-            else 
-                System.out.println(ar1[i]);         
+                ar1[i]*=10;
+     
+        for (int i=0;i<ar1.length;i++)
+            System.out.println(ar1[i]);
+                
          /*
           * Task 8
           *    Create an array called ar2odds
@@ -168,7 +170,10 @@ class Main
           *    ar2[2]=2
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
-         
+        System.out.println("**Task 8**");
+         int ar2odds [] = new int [n];
+         for (int i =0;i<ar2.length;i++)
+            
         /*
          * Task 9. In the array ar2, count how many odd numbers you
          * have.  Then create an ew array called ar4.  Copy just the odd
@@ -253,5 +258,5 @@ class Main
           * fb[4]=fb[2]+fb[3]
           */
         
-    }
-}
+        }
+        }
