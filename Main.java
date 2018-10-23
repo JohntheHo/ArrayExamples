@@ -174,9 +174,9 @@ class Main
          int k =0;
          int []ar2odds = new int [ar2.length];
          
-           for (int i =0; i<ar.length; i++)
+           for (int i =0; i<ar2.length; i++)
                 {
-                    System.out.println(ar2[i]);
+                    System.out.println("ar2="+ar2[i]);
                     
                     if (i%2==1)
                         {
@@ -186,14 +186,30 @@ class Main
                         }   
                 }
             for (int i=0;i<k;i++)
-                System.out.println(ar2odds[i]);
+                System.out.println("ar2odds=" +ar2odds[i]);
                 
             
         /*
          * Task 9. In the array ar2, count how many odd numbers you
-         * have.  Then create an ew array called ar4.  Copy just the odd
+         * have.  Then create a new array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
          */
+        
+        System.out.println("**Task 9**");
+        int m = 0;
+          int [] ar4= new int [ar2.length];
+        
+          for (int i=0; i <ar2.length;i++)
+            {
+                if (ar2[i]%2==1)
+                    {
+                        ar4[m]=ar2[i];
+                        m++;
+                    }
+                    
+            }
+           for (int i=0; i<m;i++)
+            System.out.println("ar4[" +i+ "]="+ar4[i]);
         
         /*
          * Task 10.  Shift the elements of ar4 right by 1
@@ -201,11 +217,25 @@ class Main
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
          */
+       System.out.println("** Task 10 ** ");
+         System.out.println("Original ar4");
+         for (int i=0 ; i<ar4.length ; i++)
+             System.out.println(ar4[i]);
         
-        
+         int temp10=ar4[ar4.length-1];
+         
+         for (int i=ar4.length-1 ; i>0 ; i--)
+            ar4[i]=ar4[i-1];
+         
+         ar4[0]=temp10;
+            
+         System.out.println("New ar4");
+         for (int i=0 ; i<ar4.length ; i++)
+             System.out.println(ar4[i]);
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
+        System.out.println("**Task 11**");
         
         
         /*
