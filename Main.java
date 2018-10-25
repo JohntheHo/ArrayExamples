@@ -306,7 +306,7 @@ class Main
                {    
                  s5=ar5[i];
                  if ((len5=s5.length())>4);
-                 count5++
+                 count5++;
                  
                  
                  
