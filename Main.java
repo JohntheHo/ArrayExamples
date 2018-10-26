@@ -330,6 +330,10 @@ class Main
          * a vowel
          */
         
+        String[] monsterArray = new String [16];
+            
+            monsterArray
+               
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
