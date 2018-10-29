@@ -330,9 +330,27 @@ class Main
          * a vowel
          */
         
-        String[] monsterArray = new String [16];
+        System.out.println("** Task 13**");
+       String[] monsterArray={ "Cookie",  "Grover",  "Oscar the Grouch" , "Elmo", "Rosita"}; // 
+       
+ // You can get each monster by
+ String str =monsterArray[0]; 
+
+
+// This gets the first character of each array and makes it lower case
+
+
+// Then use the code below to see....
+    for (int i=0; i<5; i++)
+{
+    char c=monsterArray[i].toLowerCase().charAt(0);
+    {
+    if (c=='a' || c=='e'|| c=='i' || c=='o'||c=='u')
+    System.out.println(monsterArray[i]); 
+    }
+}
+
             
-            monsterArray
                
          /*
           * Task 14
@@ -349,6 +367,25 @@ class Main
           *      So arindex[0]=2
           *         arindex[1]=5
           */
+         
+         System.out.println("** Task 14 **");
+            int start= 3;
+            int end =94;
+            int n14=end-start+1;
+            
+            int count14index=0;
+            
+            for (int i=0; i<n14; i++)   
+            {
+                arx[i]=start+1;
+                if (arx[i]%3==0)
+                {
+                    arxindex[k14]=i;
+                    k14++;
+                }
+            }
+          for (int i =0; i<count14index; i++)
+            System.out.println(arxindex[i]);
          
          /*
           * Create an arrary called "fb" and calculate the
